@@ -1,0 +1,43 @@
+*{
+    text-align: right;
+}
+body{
+    background-color: rgb(56, 64, 116);
+}
+header{
+    /* fond du header */
+    background-color: rgb(255, 131, 131);
+    /* couleur du texte */
+    color: rgb(89, 71, 0);
+    /* hauteur du header */
+    height: 100px;
+}
+nav{
+    background: rgba(150, 142, 236, 0.558);
+    height: 60px;
+}
+section{
+    background-color: rgb(226, 43, 58);
+    height: 750px;
+}
+article{
+    background-color: aqua;
+    height: 70px;
+}
+footer{
+    background-color: darkmagenta;
+    height: 40px;
+}
+nav,footer{
+    color: coral;
+}
+.jaune{
+    background-color: yellow;
+}
+.text{
+    text-align: right;
+}
+#bleu{
+    color: blue;
+    font-size: 25px;
+}

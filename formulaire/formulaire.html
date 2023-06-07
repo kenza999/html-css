@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+</head>
+<body>
+    <form action="mapage.php"method="get"> 
+        <!-- je declare mon formulaire  avec la balise form -->
+        <label for="pseudo">
+            pseudoNyme
+        </label>
+<input type="text" id="pseudo" name="pseudo"
+placeholder="pseudo_exemple" required>
+<!-- le type de precise le type de donnée a recuperé (text),name sera utilisé en php pour recupérer les données,
+le placeholer contient le text qui apparait dans l'input, required : champs obligatoire -->
+<!-- mot de passse -->
+<br>
+<label for="mdp">mot de passe </label>
+<input type="password" name="mdp" placeholder="mot de passe"required>
+<!-- email -->
+<br> 
+<label for="email">email</label>
+<input type="email"name="email"placeholder= "email">
+<br> <br>
+<label for="photo">photo</label>
+<input type="file"name="photo">
+<label for="choix multiple">quel destination choisissez-vous ?
+</label> <br>
+ <fieldset>
+   
+<label for="choix multiple">quel destination choisissez-vous?
+</label> ><br>
+<legend>choix multiple</legend>
+<!-- case a cochet checkbox -->
+<!-- plusieur choix -->
+<input type="checkbox" name="pays" value="Italie">
+<label for="Italie">Italie</label><br>
+<input type="checkbox"name="pays" value="tunisie"> 
+<label for="tunisie"> Tunisie</label> <br>
+<input type="checkbox"name="pays" value="espagne">
+<label for="espagne">espagne</label>
+<br>
+
+<label for="un_choix"> qui seront vos accompagnateurs? </label>
+
+<!-- un seul choix -->
+<br>
+<input type="radio" name="accompagnateur"value="reponse1">
+<label for="italie">En famille</label> <br>
+<input type="radio"name="accompagnateur"value="reponse2">
+<label for="tunisie">tous seul</label> <br>
+<label for="selection">Avion préferer</label>
+<select name="Avion" id="Avion">
+   <optgroup label="trop chère"> 
+     <option value="airefrance">airefrance</option>
+     <option value="transavia">transavia</option>
+     <optgroup label="pas chère"></optgroup>
+     <option value="Quatariaaireways"select>Quatariaairways</option>
+    </optgroup>
+    
+        
+    </optgroup>
+    </select>
+</fieldset>
+<!-- zone de texte -->
+<label for="commentaire">commentaire</label>
+<textarea name="commentaire" id="" cols="30" rows="10"></textarea>
+<!-- rows = nombre de ligne,
+cols= nombre de colonnes/caractére -->
+<!-- bouton d'envoi -->
+<!-- valider --><br>
+
+     <input type="submit"name="inscription" value="valider">
+     <!-- anuler/vide le formulaire -->
+     <input type="reset" name="annuler" value="annuler">
+     </form>
+
+
+</body>
+</html>
